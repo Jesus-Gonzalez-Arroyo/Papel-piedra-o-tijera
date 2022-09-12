@@ -1,57 +1,68 @@
-body {
-    font-family: sans-serif;
-  }
-  
-  .container-flex{
+.container-flex{
     width:100%;
-    margin: 120px 0 20px 0;
+    margin: 10px 0 20px 0;
     display: flex;
-  }
-  
-  .flex-jugador{
+}
+
+.container-flex-jugadores{
+  width: 100%;
+  display: flex;
+}
+
+.container-flex-jugadores p{
+  font-family: "Segoe UI";
+  font-size: 30px;
+}
+
+.flex-jugador{
     width: 40%;
     text-align: center;
-  }
+}
   
-  .flex-vs{
+.flex-vs{
     width: 20%;
     text-align: center;
-  }
+}
   
-  .flex-maquina{
+.flex-maquina{
     width: 40%;
     text-align: center
-  }
+}
   
-  .botones{
+.botones{
     width:100%;
     text-align: center;
-  }
+}
   
-  .botones button{
+.botones button{
     width: 80px;
     padding: 10px;
-  }
+    font-family: "Segoe UI";
+}
   
-  .container-comandos button{
+.container-comandos button{
     width: 200px;
     margin: 20px auto;
     padding: 10px;
     display: block;
-  }
+    font-family: "Segoe UI";
+}
   
-  .anuncio{
-    width: 100%;
-    text-align: center;
-    background: #333;
-  }
-  
-  .anuncio p{
-    font-family: sans-serif;
-    font-size: 150%;
-  }
-  
-  img{
+img{
     width: 100px;
     height: 100px;
-  }
+}
+
+.container-anuncio{
+  width: 100%;
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+  font-family: "Segoe UI";
+  font-size: 60px;
+}
+
+.container-anuncio p{
+  margin: 20px 0 60px 0;
+}
+

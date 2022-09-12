@@ -1,8 +1,8 @@
 let OpcionJugador;
 let Opcionmaquina;
 
-const Jugador = document.querySelector('.flex-jugador');
-const Maquina = document.querySelector('.flex-maquina');
+const Jugador = document.querySelector('#jugador');
+const Maquina = document.querySelector('#maquina');
 const anuncio = document.querySelector('#Anuncio');
 const Boton_piedra = document.querySelector('#boton_piedra');
 const Boton_papel = document.querySelector('#boton_papel');
@@ -16,19 +16,19 @@ function OpcionMaq() {
 
   if(ramdon === 1){
     Opcionmaquina = 'Tijera'
-    Maquina.innerHTML = '<img src="https://ponceelrelajado.com/juego/img/tijera.png"/>'
+    Maquina.innerHTML = '<img src="./source/img/tijera.png"/>'
     Batalla()
   }
 
   if(ramdon === 2){
     Opcionmaquina = 'Piedra'
-    Maquina.innerHTML = '<img src="https://flyclipart.com/thumbs/rock-paper-scissors-rock-paper-scissors-clipart-1176494.png"/>'
+    Maquina.innerHTML = '<img src="./source/img/puño.png"/>'
     Batalla()
   }
 
   if(ramdon === 3){
     Opcionmaquina = 'Papel'
-    Maquina.innerHTML = '<img src="https://ponceelrelajado.com/juego/img/papel.png"/>'
+    Maquina.innerHTML = '<img src="./source/img/papel.png"/>'
     Batalla()
   }
 };
@@ -37,51 +37,50 @@ function OpcionMaq() {
 function Batalla(){
 
   if(OpcionJugador === 'Tijera' && Opcionmaquina === 'Papel'){
-    anuncio.innerHTML = '<p>has ganado!!</p>'
+    anuncio.innerHTML = '<p>Has ganado!!</p>'
     console.log('metida de pene')
   }
 
   else if(OpcionJugador === 'Piedra' && Opcionmaquina === 'Tijera'){
-    anuncio.innerHTML = '<p>has ganado!!</p>'
+    anuncio.innerHTML = '<p>Has ganado!!</p>'
     console.log('metida de pene')
   }
 
   else if(OpcionJugador === 'Papel' && Opcionmaquina === 'Piedra'){
-    anuncio.innerHTML = '<p>has ganado!!</p>'
+    anuncio.innerHTML = '<p>Has ganado!!</p>'
     console.log('metida de pene')
   }
 
   else if(OpcionJugador === Opcionmaquina){
-    anuncio.innerHTML = '<p>hubo un empate</p>'
+    anuncio.innerHTML = '<p>Hubo un empate</p>'
   }
 
   else{
     anuncio.innerHTML = '<p>Has perdido</p>'
-    console.log('metida de pene')
   }
 };
 
 
 Boton_papel.addEventListener('click', ()=>{
   OpcionJugador = 'Papel'
-  Jugador.innerHTML = '<img src="https://ponceelrelajado.com/juego/img/papel.png"/>'
+  Jugador.innerHTML = '<img src="./source/img/papel.png"/>'
   OpcionMaq()
 });
 
 Boton_tijera.addEventListener('click', ()=>{
   OpcionJugador = 'Tijera'
-  Jugador.innerHTML = '<img src="https://ponceelrelajado.com/juego/img/tijera.png"/>'
+  Jugador.innerHTML = '<img src="./source/img/tijera.png"/>'
   OpcionMaq()
 });
 
 Boton_piedra.addEventListener('click', ()=>{
   OpcionJugador = 'Piedra'
-  Jugador.innerHTML = '<img src="https://flyclipart.com/thumbs/rock-paper-scissors-rock-paper-scissors-clipart-1176494.png"/>'
+  Jugador.innerHTML = '<img src="./source/img/puño.png"/>'
   OpcionMaq()
 });
 
 Boton_reiniciar.addEventListener('click', ()=>{
-  Jugador.innerHTML = '' || '<p>JUGADOR 1</p>'
-  Maquina.innerHTML = '' || '<p>MAQUINA</p>'
-  anuncio.innerHTML = ''
+  Jugador.innerHTML = '' || ''
+  Maquina.innerHTML = '' || ''
+  anuncio.innerHTML = '<p>QUE EMPIEZE EL JUEGO</p>'
 });

@@ -9,18 +9,27 @@
 </head>
 <body>
     <div id="app">
-        <div class='container-flex'>
-            <div class='flex-jugador'>
-                <p>JUGADOR 1</p>
+        <div id="Anuncio" class="container-anuncio">
+            <p class="anuncio">QUE EMPIEZE EL JUEGO</p>
+        </div>
+        <div class="container-flex-jugadores">
+            <div class="flex-jugador">
+                <p>Jugador</p>
             </div>
-            <div class='flex-vs'>
+            <div class="flex-vs">
                 <p>VS</p>
             </div>
-            <div class='flex-maquina'>
-                <p>MAQUINA</p>
+            <div class="flex-maquina">
+                <p>Maquina</p>
             </div>
         </div>
-        <div id="Anuncio">
+        <div class='container-flex'>
+            <div class='flex-jugador' id="jugador">
+            </div>
+            <div class='flex-vs'>
+            </div>
+            <div class='flex-maquina' id="maquina">
+            </div>
         </div>
         <div class='botones'>
             <button id='boton_piedra'>Piedra</button>
