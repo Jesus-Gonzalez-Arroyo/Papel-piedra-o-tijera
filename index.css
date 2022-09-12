@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .container-flex{
+    width:100%;
+    margin: 120px 0 20px 0;
+    display: flex;
+  }
+  
+  .flex-jugador{
+    width: 40%;
+    text-align: center;
+  }
+  
+  .flex-vs{
+    width: 20%;
+    text-align: center;
+  }
+  
+  .flex-maquina{
+    width: 40%;
+    text-align: center
+  }
+  
+  .botones{
+    width:100%;
+    text-align: center;
+  }
+  
+  .botones button{
+    width: 80px;
+    padding: 10px;
+  }
+  
+  .container-comandos button{
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    display: block;
+  }
+  
+  .anuncio{
+    width: 100%;
+    text-align: center;
+    background: #333;
+  }
+  
+  .anuncio p{
+    font-family: sans-serif;
+    font-size: 150%;
+  }
+  
+  img{
+    width: 100px;
+    height: 100px;
+  }
