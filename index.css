@@ -1,3 +1,7 @@
+body{
+  background: #42855B;
+}
+
 .container-flex{
     width:100%;
     margin: 10px 0 20px 0;
@@ -35,19 +39,25 @@
 }
   
 .botones button{
-    width: 80px;
+    width: 100px;
+    margin: 10px;
     padding: 10px;
     font-family: "Segoe UI";
+    border: 0;
+    border-radius: 10px;
+    background: #D2D79F;
 }
-  
+
 .container-comandos button{
     width: 200px;
     margin: 20px auto;
     padding: 10px;
+    border: 0;
+    border-radius: 10px;
     display: block;
     font-family: "Segoe UI";
 }
-  
+
 img{
     width: 100px;
     height: 100px;
@@ -55,7 +65,7 @@ img{
 
 .container-anuncio{
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 5px 0;
   text-align: center;
   font-family: "Segoe UI";
@@ -63,6 +73,29 @@ img{
 }
 
 .container-anuncio p{
-  margin: 20px 0 60px 0;
+  margin: 20px 0 20px 0;
+  display: block;
+  animation: mover 2s linear infinite;
+}
+
+@keyframes mover{
+  0%{
+    transform: scale(.9);
+  }
+
+  50%{
+    transform: scale(.8);
+  }
+
+  100%{
+    transform: scale(.9);
+  }
+
+}
+
+@media screen and (max-width: 740px){
+    .container-anuncio{
+      width: 100%;
+    }
 }
 

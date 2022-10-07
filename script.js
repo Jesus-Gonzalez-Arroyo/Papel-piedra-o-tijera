@@ -37,26 +37,28 @@ function OpcionMaq() {
 function Batalla(){
 
   if(OpcionJugador === 'Tijera' && Opcionmaquina === 'Papel'){
-    anuncio.innerHTML = '<p>Has ganado!!</p>'
-    console.log('metida de pene')
+    anuncio.innerHTML = `<p>Has ganado!!</p>
+    <img src="./source/img/ganaste.png" alt="imagen-anuncio"/>`
   }
 
   else if(OpcionJugador === 'Piedra' && Opcionmaquina === 'Tijera'){
-    anuncio.innerHTML = '<p>Has ganado!!</p>'
-    console.log('metida de pene')
+    anuncio.innerHTML = `<p>Has ganado!!</p>
+    <img src="./source/img/ganaste.png" alt="imagen-anuncio"/>`
   }
 
   else if(OpcionJugador === 'Papel' && Opcionmaquina === 'Piedra'){
-    anuncio.innerHTML = '<p>Has ganado!!</p>'
-    console.log('metida de pene')
+    anuncio.innerHTML = `<p>Has ganado!!</p>
+    <img src="./source/img/ganaste.png" alt="imagen-anuncio"/>`
   }
 
   else if(OpcionJugador === Opcionmaquina){
-    anuncio.innerHTML = '<p>Hubo un empate</p>'
+    anuncio.innerHTML = `<p>Hubo un empate!!</p>
+    <img src="./source/img/empate.png" alt="imagen-anuncio"/>`
   }
 
   else{
-    anuncio.innerHTML = '<p>Has perdido</p>'
+    anuncio.innerHTML = `<p>Has perdido</p>
+    <img src="./source/img/perdiste.png" alt="imagen-anuncio"/>`
   }
 };
 
