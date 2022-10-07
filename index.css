@@ -1,5 +1,5 @@
 body{
-  background: #42855B;
+  background: #072227;
 }
 
 .container-flex{
@@ -43,19 +43,24 @@ body{
     margin: 10px;
     padding: 10px;
     font-family: "Segoe UI";
-    border: 0;
+    border: 1;
     border-radius: 10px;
-    background: #D2D79F;
+    background: #35858B;
+}
+
+.botones p{
+  font-family: "Segoe UI";
 }
 
 .container-comandos button{
     width: 200px;
     margin: 20px auto;
     padding: 10px;
-    border: 0;
+    border: 1;
     border-radius: 10px;
     display: block;
     font-family: "Segoe UI";
+    background: #35858B;
 }
 
 img{
@@ -73,7 +78,7 @@ img{
 }
 
 .container-anuncio p{
-  margin: 20px 0 20px 0;
+  margin: 0;
   display: block;
   animation: mover 2s linear infinite;
 }
